@@ -1,0 +1,261 @@
+@import '../../mixins/mixins';
+@import '../../variables/variable';
+
+/* =============================================================
+                        Header part start
+==============================================================*/
+#header {
+    height: 45px;
+    background: rgb(245, 246, 248);
+    line-height: 45px;
+
+    .header_left {
+        p {
+            @include font_style($color1, 12px, 400, $font_family1);
+            text-transform: uppercase;
+        }
+    }
+
+    .header_right {
+        .currency {
+            ul {
+                li {
+                    position: relative;
+                    a {
+                        @include font_style($color1, 12px, 400, $font_family1);
+                        &:hover{
+                            color: #336699;
+                        }
+                        i {
+                            font-size: 12px;
+                            padding-left: 4px;
+                        }
+                    }
+                    ul {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+                        width: 40px;
+                        height: 60px;
+                        text-align: center;
+                        margin-left: -7px;
+                        position: relative;
+                        visibility: hidden;
+                        opacity: 0;
+                        transition: all linear .3s;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            left: 50%;
+                            top: -20px;
+                            -webkit-transform: translateX(-50%);
+                            transform: translateX(-50%);
+                            border-top: 10px solid transparent;
+                            border-bottom: 10px solid #fff;
+                            border-right: 10px solid transparent;
+                            border-left: 10px solid transparent;
+                        }
+                        li {
+                            line-height: 20px;
+                            padding-top: 5px;
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            visibility: visible;
+                            opacity: 1;
+                            top: 100%;
+                        }
+                    }
+                }
+            }
+            .abc {
+                li{
+                    ul{
+                        width: 63px;
+                        padding: 0 5px;
+                    }
+                }
+                margin-left: 20px;
+                margin-right: 25px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    top: 16px;
+                    right: -17px;
+                    width: 1px;
+                    height: 15px;
+                    background: #ccc;
+                }
+            }
+        }
+        .header_menu {
+            ul{
+                li{
+                    &:nth-child(3){
+                        margin-right: 28px;
+                    }
+                    a{
+                        @include font_style($color1, 12px, 400, $font_family1);
+                        margin: 0 10px;
+                        &:hover{
+                            color: #336699;
+                        }
+                    }
+                }
+            }
+        }
+        .sign_reg {
+            ul{
+                li{
+                    a{
+                        @include font_style($color1, 12px, 400, $font_family1);
+                        margin: 0 3px;
+                        position: relative;
+                        i{
+                            font-size: 17px;
+                            position: absolute;
+                            left: -20px;
+                            top: 11px;
+                        }
+                        &:hover{
+                            color: #336699;
+                        }
+                    }
+                }
+            }
+            .modal-dialog{
+                top: 50%;
+                transform: translateY(-50%);
+               
+            }
+            .underline{
+                border-radius: 0;
+                padding: 10px 50px;
+                position: relative;
+                .close{
+                    position: absolute;
+                    right: 2px;
+                    top: -35px;
+                    font-size: 25px;
+                    color: #fff;
+                    transition: all linear .3s;
+                    &:hover{
+                        transform: rotate(90deg);
+                    }
+                }
+                form{
+                    .custom_control{
+                        border-radius: 0;
+                    }
+                    label{
+                        @include font_style(rgb(116, 116, 116), 13px, 400, $font_family1);
+                        padding: 0;
+                    }
+                    .custom_checkbox{
+                        border-radius: 2px !important;
+                        margin-top: 17px;
+                    }
+                    .beside_remember{
+                        color: #a94442;
+                        margin-left: 139px;
+                        border-bottom: 1px solid #a94442;
+                    }
+                    .btn_custom{
+                        @include font_style(#fff, 14px, 600, $font_family1);
+                        text-transform: uppercase;
+                        background: #336699;
+                        display: block;
+                        width: 100%;
+                        border-radius: 0;
+                        &:hover{
+                            background: rgb(51, 102, 153);
+                        }
+                    }
+                    .social_account{
+                        h5{
+                            @include font_style(#747474, 14px, 400, $font_family1);
+                            text-align: center;
+                            padding-top: 30px;
+                        }
+                        .social_icon{
+                            ul{
+                                padding-left: 150px;
+                                padding-bottom: 40px;
+                                li{
+                                    .custom_icon{
+                                        margin: 0 20px;
+                                        i{
+                                            font-size: 14px;
+                                            width: 30px;
+                                            height: 30px;
+                                            border: 1px solid red;
+                                            line-height: 29px;
+                                            text-align: center;
+                                            border-radius: 50%;
+                                            margin-top: -5px;
+                                            &:hover{
+                                                color: #fff;
+                                                background: #336699;
+                                                border-color: #336699;
+                                                transition: all linear .4s;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    p{
+                        @include font_style(#747474, 13px, 400, $font_family1);
+                        line-height: 23px;
+                        span{
+                            color: #336699;
+                            border-bottom: 1px solid #336699;
+                        }
+                    }
+                    h6{
+                        @include font_style(#336699, 13px, 400, $font_family1);
+                        border-bottom: 1px solid #336699;
+                        width: 133px;
+                        padding-top: 11px;
+                    }
+                    .custom_label{
+                        span{
+                            color: #336699;
+                        }
+                    }
+                }
+            }
+            .sign_button{
+                justify-content: space-between;
+                border-bottom: 1px solid #eeeeee;
+                .sign{
+                    background: none;
+                    @include font_style(#333333, 16px, 700, $font_family1);
+                    text-transform: uppercase;
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: -1px;
+                        width: 100%;
+                        height: 2px;
+                        background: #336699;
+                    }
+                    &:hover{
+                        color: #336699;
+                        transition: all linear .3s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =============================================================
+                        Header part end
+==============================================================*/

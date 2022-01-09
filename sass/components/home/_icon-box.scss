@@ -1,0 +1,30 @@
+/* =============================================================
+                        Icon-box part start
+==============================================================*/
+.icon_box{
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+    .icon_and_text{
+        padding: 30px 45px;
+        i{
+            color: rgb(51, 102, 153);
+            font-size: 35px;
+        }
+        .text_box{
+            padding-left: 12px;
+            h5{
+                @include font_style(rgb(51, 51, 51), 14px, 600, $font_family1);
+                letter-spacing: -0.35px;
+                line-height: 16.8px;
+            }
+            p{
+                @include font_style(rgb(102, 102, 102), 12px, 400, $font_family1);
+                line-height: 13px;
+                padding-top: 3px;
+            }
+        }
+    }
+}
+/* =============================================================
+                        Icon-box part end
+==============================================================*/

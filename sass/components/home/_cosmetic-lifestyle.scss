@@ -1,0 +1,73 @@
+/* =============================================================
+                        Cosmetic part start
+==============================================================*/
+#cosmetic{
+    padding: 60px 0;
+    .cosmetic_img{
+        img{
+            border-radius: 4px;
+        }
+        position: relative;
+        .cosmetic_overly{
+            position: absolute;
+            top: 32px;
+            left: 40px;
+            h4{
+                @include font_style(rgb(51, 51, 51), 14px, 600, $font_family1);
+                line-height: 16.8px;
+                text-transform: uppercase;
+            }
+            h1{
+                @include font_style(rgb(51, 51, 51), 28px, 700, $font_family1);
+                line-height: 30.8px;
+                padding-top: 17px;
+            }
+            a{
+                @include font_style(rgb(51, 51, 51), 14px, 600, $font_family1);
+                line-height: 30.4167px;
+                text-transform: uppercase;
+                padding-top: 30px;
+                position: relative;
+                transition: all linear .3s;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #333;
+                    transform: scaleX(0);
+                    transform-origin: 100% 0;
+                    transition: transform .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: scaleX(1);
+                        transform-origin: 0 0;
+                    }
+                }
+            }
+        }
+        .custom_cosmetic_overly{
+            h4,h1,a{
+                color: #fff;
+            }
+            a{
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    bottom: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 3px;
+                    background: #fff;
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                        Cosmetic part end
+==============================================================*/

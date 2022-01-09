@@ -1,0 +1,28 @@
+/* =============================================================
+                Shop_menu_categories part start
+==============================================================*/
+#menu{
+    .shop_menu{
+        border-bottom: 1px solid #eee;
+    }
+    .shop_dropdown_box{
+        border-right: 1px solid #eee;
+        border-left: 1px solid #eee;
+        ul{
+            li{
+                .dropdown_box{
+                    display: none;
+                    box-shadow: 0px -1px 5px 1px #ccc;
+                }
+                &:hover{
+                    .dropdown_box{
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                Shop_menu_categories part start
+==============================================================*/

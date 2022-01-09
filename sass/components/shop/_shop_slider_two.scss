@@ -1,0 +1,37 @@
+/* =============================================================
+                    Shop_slider_one part end
+==============================================================*/
+#slider_two{
+    padding-bottom: 30px;
+    .slider_two_main{
+        border-bottom: 1px solid #eee;
+        .slider_two_img{
+            padding-bottom: 30px;
+            &:hover{
+                img{
+                    transform: scale(1.1);
+                }
+                img{
+                    box-shadow: 0 0 20px -4px rgba(0, 0, 0, 0.288);
+                }
+            }
+            img{
+                border-radius: 50%;
+                transition: all linear .3s;
+            }
+            h6{
+                @include font_style(#333, 14px, 700, $font_family1);
+                text-align: center;
+                padding-top: 20px;
+                transition: all linear .3s;
+                cursor: pointer;
+                &:hover{
+                    color: #336699;
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                    Shop_slider_one part end
+==============================================================*/

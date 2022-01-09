@@ -1,0 +1,52 @@
+/* =============================================================
+                        Deals part start
+==============================================================*/
+#deals{
+    padding: 0 0 60px 0;
+    .border_around{
+        border: 1px solid #eeeeee;
+        border-radius: 4px;
+        .hot_day_text{
+            h5{
+                @include font_style(rgb(51, 51, 51), 18px, 700, $font_family1);
+                line-height: 21.6px;
+                padding: 25px 20px 10px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: red;
+                }
+            }
+        }
+        .custom_small_img{
+            padding-left: 20px;
+        }
+        .product_details{
+            h2{
+                @include font_style(rgb(51, 51, 51), 20px, 600, $font_family1);
+                letter-spacing: -0.5px;
+                line-height: 32px;
+                padding-top: 25px;
+                padding-bottom: 10px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: red;
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                        Deals part end
+==============================================================*/

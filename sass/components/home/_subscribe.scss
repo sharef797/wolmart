@@ -1,0 +1,62 @@
+/* =============================================================
+                        Subscribe part start
+==============================================================*/
+#subscribe{
+    padding-bottom: 60px;
+    .subscribe_body{
+        background: #336699;
+        .left_item{
+            padding: 25px 0;
+            display: flex;
+            justify-content: space-between;
+            .envelope_box{
+                i{
+                    font-size: 47px;
+                    color: #fff;
+                }
+            }
+            .envelope_text{
+                margin-right: 100px;
+                margin-top: 4px;
+                h4{
+                    @include font_style(#fff, 16px, 600, $font_family1);
+                    text-transform: uppercase;
+                }
+                p{
+                    @include font_style(#fff, 13px, 400, $font_family1);
+                }
+            }
+        }
+        .email_box{
+            form{
+                input{
+                    width: 610px;
+                    height: 47px;
+                    margin: 30px -30px;
+                    border-radius: 4px;
+                    border-color: #fff;
+                    @include font_style(#d7d7d7, 14px, 400, $font_family1);
+                    padding-left: 20px;
+                    border: none;
+                }
+                a{
+                    padding: 13px 30px;
+                    @include font_style(#fff, 14px, 600, $font_family1);
+                    text-transform: uppercase;
+                    background: #3b3b3b;
+                    border: none;
+                    margin-left: 41px;
+                    border-radius: 4px;
+                    i{
+                        font-size: 20px;
+                        color: #fff;
+                        margin-left: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                        Subscribe part end
+==============================================================*/

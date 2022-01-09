@@ -1,0 +1,51 @@
+/* =============================================================
+                 Category Banner Wrapper start
+==============================================================*/
+#banner_wrapper{
+    padding: 60px 0;
+    .banner_wrapper_img{
+        img{
+            border-radius: 4px;
+        }
+        position: relative;
+        .banner_wrapper_overly{
+            position: absolute;
+            top: 28px;
+            left: 40px;
+            h4{
+                @include font_style(rgb(51, 51, 51), 18px, 400, $font_family1);
+                line-height: 21.6px;
+                span{
+                    @include font_style(#f77c29, 18px, 700, $font_family1);
+                    letter-spacing: -0.45px;
+                    line-height: 21.6px;
+                }
+            }
+            h1{
+                @include font_style(rgb(51, 51, 51), 26px, 800, $font_family1);
+                text-transform: uppercase;
+                line-height: 30.4167px;
+            }
+            h3{
+                @include font_style(rgb(51, 51, 51), 26px, 400, $font_family1);
+                line-height: 30.4167px;
+            }
+            p{
+                @include font_style(rgb(51, 51, 51), 14px, 400, $font_family1);
+                line-height: 22.4px;
+                padding-top: 25px;
+                span{
+                    @include font_style(#f77c29, 14px, 700, $font_family1);
+                }
+            }
+        }
+        .custom_banner_wrapper_overly{
+            h4,h1,h3,p{
+                color: #fff;
+            }
+        }
+    }
+}
+/* =============================================================
+                    Category Banner Wrapper end
+==============================================================*/

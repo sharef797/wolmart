@@ -1,0 +1,131 @@
+/* =============================================================
+                        Banner part start
+==============================================================*/
+#banner{
+    padding-bottom: 40px;
+    .banner_item{
+        padding: 100px 0;
+        .banner_img{
+            img{
+                margin-left: -85px;
+                width: 100%;
+                height: 400px;
+            }
+        }
+        .banner_text{
+            width: 395px;
+            margin-left: -85px;
+            h2{
+                @include font_style(rgb(102, 102, 102), 40px, 400, $font_family1);
+                letter-spacing: -2px;
+                line-height: 40px;
+                text-align: right;
+                margin-right: 8px;
+                span{
+                    position: relative;
+                    &::after{
+                        position: absolute;
+                        content: '';
+                        left: 0;
+                        bottom: 8px;
+                        width: 113px;
+                        height: 3px;
+                        background: #f77c29;
+                    }
+                }
+            }
+            h1{
+                @include font_style(rgb(51, 51, 51), 50px, 700, $font_family1);
+                letter-spacing: -1.25px;
+                line-height: 50px;
+                text-transform: uppercase;
+            }
+            p{
+                @include font_style(rgb(102, 102, 102), 24px, 400, $font_family1);
+                line-height: 44.6333px;
+                text-align: right;
+                margin-right: 4px;
+                span{
+                    @include font_style(#f77c29, 24px, 700, $font_family1);
+                    line-height: 44.6333px;
+                }
+            }
+            a{
+                @include font_style(rgb(51, 51, 51), 14px, 600, $font_family1);
+                text-transform: uppercase;
+                line-height: 14px;
+                padding: 20px 38px;
+                border: 2px solid #333;
+                border-radius: 3px;
+                transition: all linear .3s;
+                text-align: right;
+                margin-left: 218px;
+                &:hover{
+                    color: #fff;
+                    background: #333;
+                    border-color: #333;
+                }
+            }
+        }
+        .custom_banner_two{
+            h1{
+                margin-right: -38px;
+            }
+            h2{
+                margin-right: 28px;
+                span{
+                    color: #f77c29;
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+            p{
+                margin-right: 33px;
+            }
+            a{
+                margin-left: 1px;
+            }
+        }
+        .custom_banner_three{
+            p{
+                text-transform: uppercase;
+                margin-top: 125px;
+            }
+            h2{
+                margin-right: 1px;
+            }
+            h1{
+                margin-top: 10px;
+                margin-bottom: 10px;
+                background: red;
+            }
+            a{
+                margin-left: 222px;
+            }
+        }
+    }
+    .nxt_arr,
+    .prv_arr{
+        color: rgb(102, 102, 102);
+        font-size: 22px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all linear .3s;
+        &:hover{
+            color: #336699;
+        }
+    }
+    .prv_arr{
+        left: 30px;
+        z-index: 3;
+    }
+    .nxt_arr{
+        right: 30px;
+    }
+}
+/* =============================================================
+                        Banner part end
+==============================================================*/

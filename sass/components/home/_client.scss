@@ -1,0 +1,58 @@
+/* =============================================================
+                        Client part start
+==============================================================*/
+#client{
+    padding-bottom: 50px;
+    .client_top{
+        border-bottom: 1px solid #eee;
+        h2{
+            @include font_style(rgb(51, 51, 51), 20px, 700, $font_family1);
+            line-height: 24px;
+            text-transform: capitalize;
+            padding-bottom: 15px;
+        }
+    }
+    .client_bottom_one{
+        margin-top: 20px;
+        .client_img{
+            border: 1px solid #eee;
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5),
+            &:nth-child(6){
+                border-bottom: transparent;
+            }
+        }
+        .client_img{
+            border: 1px solid #eee;
+            &:first-child,
+            &:nth-child(2),
+            &:nth-child(3),
+            &:nth-child(4),
+            &:nth-child(5){
+                border-right: transparent; 
+            }
+        }
+        .row{
+            .col:last-child{
+                border-right: 1px solid #eee;
+            }
+        }
+    }
+    .client_bottom_two{
+        .client_img{
+            border: 1px solid #eee;
+            border-right: transparent;
+        }
+        .row{
+            .col:last-child{
+                border-right: 1px solid #eee;
+            }
+        }
+    }
+}
+/* =============================================================
+                        Client part start
+==============================================================*/

@@ -1,0 +1,26 @@
+/* =============================================================
+                    Breadcrumb part start
+==============================================================*/
+#breadcrumb{
+    .custom_breadcrumb{
+        .custom_breadcrumb_item_one{
+            a{
+                @include font_style(rgb(91, 91, 91), 13px, 400, $font_family1);
+                line-height: 19.5px;
+                transition: all linear .3s;
+                margin-left: 1px;
+                &:hover{
+                    color: #333;
+                }
+            }
+        }
+        .custom_breadcrumb_item{
+            @include font_style(#333, 13px, 400, $font_family1);
+            line-height: 19.5px;
+            padding-top: 4px;
+        }
+    }
+}
+/* =============================================================
+                    Breadcrumb part end
+==============================================================*/

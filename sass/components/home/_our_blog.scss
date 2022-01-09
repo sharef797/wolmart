@@ -1,0 +1,103 @@
+/* =============================================================
+                        Our blog part start
+==============================================================*/
+#our_blog{
+    padding-bottom: 50px;
+    .our_blog_top{
+        border-bottom: 1px solid #eee;
+        display: flex;
+        justify-content: space-between;
+        h2{
+            display: inline-block;
+            @include font_style(rgb(51, 51, 51), 20px, 700, $font_family1);
+            line-height: 24px;
+            text-transform: capitalize;
+            padding-bottom: 15px;
+        }
+        a{
+            text-align: center;
+            @include font_style(rgb(51, 51, 51), 14px, 600, $font_family1);
+            line-height: 22.4px;
+            letter-spacing: -0.35px;
+            transition: all linear .3s;
+            &:hover{
+                color: #336699;
+            }
+        }
+    }
+    .our_blog_bottom{
+        padding-top: 20px;
+        .our_blog_img{
+            overflow: hidden;
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+            img{
+                border-radius: 4px;
+                transition: all linear .3s;
+            }
+        }
+        .our_blog_text{
+            text-align: center;
+            padding-top: 20px;
+            h6{
+                @include font_style(#999, 13px, 600, $font_family1);
+                line-height: 21.1px;
+                strong{
+                    @include font_style(#333, 14px, 600, $font_family1);
+                    line-height: 23.8px;
+                    transition: all linear .3s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #336699;
+                    }
+                }
+                span{
+                    @include font_style(#333, 14px, 400, $font_family1);
+                    line-height: 23.8px;
+                    transition: all linear .3s;
+                    cursor: pointer;
+                    &:hover{
+                        color: #336699;
+                    }
+                }
+            }
+            p{
+                @include font_style(#333, 15px, 600, $font_family1);
+                transition: all linear .3s;
+                cursor: pointer;
+                &:hover{
+                    color: #336699;
+                }
+            }
+            a{
+                @include font_style(#333, 14px, 400, $font_family1);
+                text-transform: capitalize;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    bottom: -3px;
+                    width: 100%;
+                    height: 3px;
+                    background: #333;
+                    transform: scaleX(0);
+                    transform-origin: 0 100%;
+                    transition: transform .3s;
+                }
+                &:hover{
+                    &::after{
+                        transform: scaleX(1);
+                        transform-origin: 0 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                        Our blog part end
+==============================================================*/

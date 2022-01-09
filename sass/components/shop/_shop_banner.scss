@@ -1,0 +1,42 @@
+/* =============================================================
+                    Shop_banner part end
+==============================================================*/
+#shop_banner{
+    .shop_banner_img{
+        margin-left: 1px;
+        position: relative;
+        img{
+            border-radius: 3px;
+        }
+        .shop_banner_overly{
+            position: absolute;
+            top: 80px;
+            left: 85px;
+            h3{
+                @include font_style(#333, 28px, 600, $font_family1);
+                line-height: 33.6px;
+            }
+            h1{
+                @include font_style(#fff, 40px, 700, $font_family1);
+                line-height: 48px;
+                text-transform: uppercase;
+            }
+            a{
+                padding: 20px 30px;
+                background: #333;
+                border-radius: 4px;
+                @include font_style(#fff, 14px, 600, $font_family1);
+                line-height: 14px;
+                text-transform: uppercase;
+                margin-top: 17px;
+                i{
+                    font-size: 15px;
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                    Shop_banner part end
+==============================================================*/

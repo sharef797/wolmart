@@ -1,0 +1,115 @@
+/* =============================================================
+                    Shop_filter part start
+==============================================================*/
+#shop_filter {
+    .shop_filter_round {
+        .filter_top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            h3 {
+                @include font_style(#333, 16px, 700, $font_family1);
+                padding-left: 0;
+                position: relative;
+
+                span {
+                    position: absolute;
+                    left: 45px;
+                    top: 0;
+                }
+            }
+
+            h4 {
+                @include font_style(#333, 14px, 400, $font_family1);
+            }
+        }
+
+        .filter_bottom {
+            padding-top: 25px;
+
+            .all_categories {
+                padding-bottom: 30px;
+                >ul {
+                    h2 {
+                        @include font_style(#333, 16px, 600, $font_family1);
+                        border-bottom: 1px solid #eee;
+                        padding-bottom: 10px;
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            width: 113px;
+                            height: 2px;
+                            left: 0;
+                            top: 33px;
+                            background: #333;
+                        }
+                    }
+                    >li {
+                        position: relative;
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 12px;
+                            height: 2px;
+                            background: #333;
+                            transition: all linear .2s;
+                        }
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                            width: 12px;
+                            height: 2px;
+                            background: #333;
+                            transition: all linear .2s;
+                            opacity: 0;
+                        }
+
+                        &.collapsed {
+                            &::after {
+                                transform: rotate(180deg);
+                            }
+
+                            &::before {
+                                transform: rotate(90deg);
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
+                .custom_collapse{
+                    ul{
+                        li{
+                            a{
+                                @include font_style(#333, 14px, 400, $font_family1);
+                                transition: all linear .3s;
+                                padding-top: 10px;
+                                &:hover{
+                                    color: #336699;
+                                }
+                            }
+                        }
+                        form{
+                            .price_range{
+                                display: flex;
+                                flex-wrap: wrap;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* =============================================================
+                    Shop_filter part end
+==============================================================*/

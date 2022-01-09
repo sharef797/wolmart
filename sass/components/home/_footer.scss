@@ -1,0 +1,198 @@
+/* =============================================================
+                        Footer part start
+==============================================================*/
+#footer{
+    .footer_top{
+        border-bottom: 1px solid #eee;
+        h6{
+            @include font_style(#333, 13px, 500, $font_family1);
+            line-height: 27.3px;
+            padding: 6px 0;
+        }
+        .footer_number{
+            @include font_style(#333, 18px, 600, $font_family1);
+            line-height: 18px;
+            transition: all linear .3s;
+            padding: 6px 0;
+            &:hover{
+                color: #336699;
+            }
+        }
+        p{
+            @include font_style(#666, 13px, 400, $font_family1);
+            line-height: 27.95px;
+            padding-bottom: 25px;
+            width: 275px;
+        }
+        ul{
+            padding-bottom: 50px;
+            li{
+                padding-right: 10px;
+                a{
+                    i{
+                        color: #fff;
+                        font-size: 15px;
+                    }
+                }
+                .facebook{
+                    width: 30px;
+                    height: 30px;
+                    background: #1b4f9b;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                }
+                .twitter{
+                    width: 30px;
+                    height: 30px;
+                    background: #00adef;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                }
+                .instagram{
+                    width: 30px;
+                    height: 30px;
+                    background: #cc0001;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                }
+                .youtube{
+                    width: 30px;
+                    height: 30px;
+                    background: #2c567e;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                }
+                .pinterest{
+                    width: 30px;
+                    height: 30px;
+                    background: #f96a02;
+                    text-align: center;
+                    line-height: 30px;
+                    border-radius: 50%;
+                }
+            }
+        }
+        .f_left_item{
+            padding-left: 50px;
+            h4{
+                @include font_style(#333, 14px, 600, $font_family1);
+                text-transform: uppercase;
+                padding-bottom: 20px;
+            }
+            ul{
+                li{
+                    padding: 2px 0;
+                    a{
+                        @include font_style(#666, 13px, 400, $font_family1);
+                        line-height: 15.6px;
+                        transition: all linear .3s;
+                        &:hover{
+                            color: #336699;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+    .footer_middle{
+        border-bottom: 1px solid #eee;
+        padding-top: 45px;
+        padding-bottom: 40px;
+        .category_name{
+            padding: 13px 0;
+            position: relative;
+            h6{
+                @include font_style(#666, 14px, 600, $font_family1);
+                line-height: 14px;
+            }
+            .first_category{
+                position: absolute;
+                top: 5px;
+                left: 144px;
+            }
+            .secound_category{
+                position: absolute;
+                top: 5px;
+                left: 149px;
+            }
+            .third_category{
+                position: absolute;
+                top: 5px;
+                left: 188px;
+            }
+            .fourth_category{
+                position: absolute;
+                top: 5px;
+                left: 129px;
+            }
+            .fifth_category{
+                position: absolute;
+                top: 5px;
+                left: 152px;
+            }
+            .sixth_category{
+                position: absolute;
+                top: 5px;
+                left: 200px;
+            }
+            ul{
+                li{
+                    a{
+                        @include font_style(#666, 13px, 400, $font_family1);
+                        line-height: 13px;
+                        padding: 0 8px;
+                        top: 1px;
+                        left: 0px;
+                        transition: all linear .3s;
+                        position: relative;
+                        &::after{
+                            position: absolute;
+                            content: '';
+                            width: 1px;
+                            height: 13px;
+                            right: 0;
+                            top: 0;
+                            background: #ccc;
+                        }
+                        &:hover{
+                            color: #336699;
+                        }
+                    }
+                    .a_last_child{
+                        &::after{
+                            background: transparent;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer_bottom{
+        padding-top: 30px;
+        padding-bottom: 30px;
+        .copy_right{
+            justify-content: space-between;
+            .footer_last_left{
+                p{
+                    @include font_style(#666, 13px, 400, $font_family1);
+                    line-height: 24.9667px;
+                }
+            }
+            .footer_last_middle{
+                span{
+                    @include font_style(#666, 13px, 400, $font_family1);
+                    line-height: 20.8px;
+                    padding-left: 540px;
+                }
+            }
+        }
+    }
+}
+/* =============================================================
+                        Footer part end
+==============================================================*/
